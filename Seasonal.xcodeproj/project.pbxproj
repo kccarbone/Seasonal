@@ -21,6 +21,8 @@
 		27B9D8391911D22000DFE8B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B9D81B1911D22000DFE8B8 /* UIKit.framework */; };
 		27B9D8411911D22000DFE8B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27B9D83F1911D22000DFE8B8 /* InfoPlist.strings */; };
 		27B9D8431911D22000DFE8B8 /* SeasonalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B9D8421911D22000DFE8B8 /* SeasonalTests.m */; };
+		27DDABD01911E222007244E1 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27DDABCF1911E222007244E1 /* bg1.jpg */; };
+		27DDABD21911E229007244E1 /* bg1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27DDABD11911E229007244E1 /* bg1@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		27B9D83E1911D22000DFE8B8 /* SeasonalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SeasonalTests-Info.plist"; sourceTree = "<group>"; };
 		27B9D8401911D22000DFE8B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27B9D8421911D22000DFE8B8 /* SeasonalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeasonalTests.m; sourceTree = "<group>"; };
+		27DDABCF1911E222007244E1 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
+		27DDABD11911E229007244E1 /* bg1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg1@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		27B9D81D1911D22000DFE8B8 /* Seasonal */ = {
 			isa = PBXGroup;
 			children = (
+				27DDABCE1911DC81007244E1 /* Images */,
 				27B9D8261911D22000DFE8B8 /* AppDelegate.h */,
 				27B9D8271911D22000DFE8B8 /* AppDelegate.m */,
 				27B9D8291911D22000DFE8B8 /* Main.storyboard */,
@@ -150,6 +155,15 @@
 				27B9D83F1911D22000DFE8B8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27DDABCE1911DC81007244E1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				27DDABCF1911E222007244E1 /* bg1.jpg */,
+				27DDABD11911E229007244E1 /* bg1@2x.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B9D8301911D22000DFE8B8 /* Images.xcassets in Resources */,
+				27DDABD21911E229007244E1 /* bg1@2x.jpg in Resources */,
 				27B9D8221911D22000DFE8B8 /* InfoPlist.strings in Resources */,
+				27DDABD01911E222007244E1 /* bg1.jpg in Resources */,
 				27B9D82B1911D22000DFE8B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +474,7 @@
 				27B9D8481911D22000DFE8B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27B9D8491911D22000DFE8B8 /* Build configuration list for PBXNativeTarget "SeasonalTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +483,7 @@
 				27B9D84B1911D22000DFE8B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

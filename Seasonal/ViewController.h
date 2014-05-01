@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *imgBackground;
+
+- (IBAction)btnTest:(id)sender;
 
 @end
