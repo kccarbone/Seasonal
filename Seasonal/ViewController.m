@@ -29,8 +29,14 @@
 
 - (IBAction)btnTest:(id)sender {
     
-    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:1 initialSpringVelocity:4 options:UIViewAnimationOptionCurveLinear animations:^(){
+    UITableViewController *table = [self.storyboard instantiateViewControllerWithIdentifier:@"TestTable"];
+    
+    [self.view addSubview:table.view];
+    
+    table.view.frame = CGRectMake(0, 0, 300, 500);
+    
+    /*[UIView animateWithDuration:1 delay:0 usingSpringWithDamping:1 initialSpringVelocity:4 options:UIViewAnimationOptionCurveLinear animations:^(){
         self.imgBackground.center = CGPointMake(self.imgBackground.center.x - 100, self.imgBackground.center.y);
-    } completion:nil];
+    } completion:nil];*/
 }
 @end
