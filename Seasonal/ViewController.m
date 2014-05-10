@@ -17,6 +17,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = self.vwBackground.frame;
+    gradient.colors = @[(id)[[UIColor greenColor] CGColor], (id)[[UIColor blueColor] CGColor]];
+    gradient.locations = @[@0, @1];
+    
+    [self.vwBackground.layer insertSublayer:gradient atIndex:0];
 	
     UIView *circle = [[UIView alloc] initWithFrame:CGRectZero];
     

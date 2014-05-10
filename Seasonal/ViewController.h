@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIImageView *imgBackground;
+@property (strong, nonatomic) IBOutlet UIView *vwBackground;
+
 
 - (IBAction)btnTest:(id)sender;
 
