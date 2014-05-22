@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
+#import "TitleBackgroundView.h"
 
 @interface ViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIView *vwBackground;
+@property (strong, nonatomic) IBOutlet TitleBackgroundView *vwBackground;
 
 
 - (IBAction)btnTest:(id)sender;

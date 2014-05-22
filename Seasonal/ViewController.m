@@ -18,42 +18,7 @@
 {
     [super viewDidLoad];
     
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = self.vwBackground.frame;
-    gradient.colors = @[(id)[[UIColor greenColor] CGColor], (id)[[UIColor blueColor] CGColor]];
-    gradient.locations = @[@0, @1];
-    
-    [self.vwBackground.layer insertSublayer:gradient atIndex:0];
-	
-    UIView *circle = [[UIView alloc] initWithFrame:CGRectZero];
-    
-    circle.layer.opacity = .5;
-    circle.layer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 50, 50) cornerRadius:25] CGPath];
-    circle.layer.shadowColor = [[UIColor whiteColor] CGColor];
-    circle.layer.shadowRadius = 5;
-    circle.layer.shadowOpacity = 1;
-    circle.layer.shadowOffset = CGSizeZero;
-    
-    [self.view addSubview:circle];
-    
-    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"shadowPath"];
-    anim.duration = 2;
-    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-    anim.fromValue = (id)[[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 0, 0) cornerRadius:0] CGPath];
-    anim.toValue = (id)[[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 50, 50) cornerRadius:25] CGPath];
-    
-    CABasicAnimation *anim2 = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    anim2.duration = 2;
-    anim2.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-    anim2.fromValue = @0;
-    anim2.toValue = @0.5;
-    
-    [circle.layer addAnimation:anim forKey:nil];
-    [circle.layer addAnimation:anim2 forKey:nil];
-    
-    [UIView animateWithDuration:10 delay:1 options:UIViewAnimationOptionCurveEaseInOut animations:^(){
-        circle.frame = CGRectMake(100, 200, 0, 0);
-    } completion:nil];
+    [self.vwBackground addCircle:[UIColor grayColor] opacity:0.4 radius:30 start:CGPointMake(200, 100) fly1:CGPointMake(100, 400) fly2:CGPointMake(0, 0)];
 }
 
 - (void)didReceiveMemoryWarning

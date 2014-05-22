@@ -23,6 +23,7 @@
 		27B9D8431911D22000DFE8B8 /* SeasonalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B9D8421911D22000DFE8B8 /* SeasonalTests.m */; };
 		27DDABD01911E222007244E1 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27DDABCF1911E222007244E1 /* bg1.jpg */; };
 		27DDABD21911E229007244E1 /* bg1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27DDABD11911E229007244E1 /* bg1@2x.jpg */; };
+		27E2BBF9192D88FE00211C97 /* TitleBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E2BBF8192D88FE00211C97 /* TitleBackgroundView.m */; };
 		27F2E7A7191EF0AE00287686 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F2E7A6191EF0AE00287686 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		27B9D8421911D22000DFE8B8 /* SeasonalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeasonalTests.m; sourceTree = "<group>"; };
 		27DDABCF1911E222007244E1 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
 		27DDABD11911E229007244E1 /* bg1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg1@2x.jpg"; sourceTree = "<group>"; };
+		27E2BBF7192D88FE00211C97 /* TitleBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleBackgroundView.h; sourceTree = "<group>"; };
+		27E2BBF8192D88FE00211C97 /* TitleBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleBackgroundView.m; sourceTree = "<group>"; };
 		27F2E7A6191EF0AE00287686 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -121,11 +124,11 @@
 			isa = PBXGroup;
 			children = (
 				27DDABCE1911DC81007244E1 /* Images */,
+				27E2BBFB192D8A4000211C97 /* Controllers */,
+				27E2BBFC192D8A5000211C97 /* Objects */,
 				27B9D8261911D22000DFE8B8 /* AppDelegate.h */,
 				27B9D8271911D22000DFE8B8 /* AppDelegate.m */,
 				27B9D8291911D22000DFE8B8 /* Main.storyboard */,
-				27B9D82C1911D22000DFE8B8 /* ViewController.h */,
-				27B9D82D1911D22000DFE8B8 /* ViewController.m */,
 				27B9D82F1911D22000DFE8B8 /* Images.xcassets */,
 				27B9D81E1911D22000DFE8B8 /* Supporting Files */,
 			);
@@ -168,6 +171,24 @@
 				27DDABD11911E229007244E1 /* bg1@2x.jpg */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		27E2BBFB192D8A4000211C97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27B9D82C1911D22000DFE8B8 /* ViewController.h */,
+				27B9D82D1911D22000DFE8B8 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		27E2BBFC192D8A5000211C97 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				27E2BBF7192D88FE00211C97 /* TitleBackgroundView.h */,
+				27E2BBF8192D88FE00211C97 /* TitleBackgroundView.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B9D82E1911D22000DFE8B8 /* ViewController.m in Sources */,
+				27E2BBF9192D88FE00211C97 /* TitleBackgroundView.m in Sources */,
 				27B9D8281911D22000DFE8B8 /* AppDelegate.m in Sources */,
 				27B9D8241911D22000DFE8B8 /* main.m in Sources */,
 			);
